@@ -6,13 +6,17 @@
 [![Language](https://img.shields.io/badge/Language-Dart-0175C2.svg?style=for-the-badge&logo=dart)](https://github.com/kritika038/kritika-business-ledger-showcase)
 [![Database](https://img.shields.io/badge/Database-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://github.com/kritika038/kritika-business-ledger-showcase)
 [![Auth](https://img.shields.io/badge/Auth-Firebase-FFCA28.svg?style=for-the-badge&logo=firebase)](https://github.com/kritika038/kritika-business-ledger-showcase)
+<br/>
+[![Stars](https://img.shields.io/github/stars/kritika038/kritika-business-ledger-showcase?style=for-the-badge)](https://github.com/kritika038/kritika-business-ledger-showcase/stargazers)
+[![Forks](https://img.shields.io/github/forks/kritika038/kritika-business-ledger-showcase?style=for-the-badge)](https://github.com/kritika038/kritika-business-ledger-showcase/network/members)
+[![Last Commit](https://img.shields.io/github/last-commit/kritika038/kritika-business-ledger-showcase?style=for-the-badge)](https://github.com/kritika038/kritika-business-ledger-showcase/commits/main)
 
 **Kritika Business Ledger** is a mobile-first business management application designed to track sales, simplify collection recording, monitor outstanding balances, and generate professional PDF invoices directly from mobile devices. It is built as a fast, reliable, and offline-first solution for on-the-field operations.
 
 ---
 
 ## 📋 Project Overview
-Kritika Business Ledger streamlines daily billing, ledgers, and transactions for small-to-medium distributors and agents. By prioritizing mobile user interfaces and local storage efficiency, the application ensures that transactions can be recorded and balanced instantly, even in areas with limited internet connectivity.
+Kritika Business Ledger streamlines daily billing, ledger management, collections, and customer account tracking for manufacturing, wholesale, and distribution businesses. By prioritizing mobile user interfaces and local storage efficiency, the application ensures that transactions can be recorded and balanced instantly, even in areas with limited internet connectivity.
 
 ### Problem Statement
 This project was inspired by real challenges observed in a footwear manufacturing and distribution business where daily sales, customer balances, and payment collections needed to be tracked efficiently from a mobile device. 
@@ -24,6 +28,20 @@ In this ecosystem, traditional paper logbooks often lead to computational errors
 * **On-the-go billing**: Ability to create and share customer invoices during deliveries.
 * **Offline resilience**: Complete operational independence in warehouses and remote markets.
 * **Operational simplicity**: Simplified mobile flows that replace complex bookkeeping ledger journals.
+
+# 🎯 Real-World Impact
+
+This application was developed after observing day-to-day operational challenges in a footwear manufacturing and distribution business.
+
+The solution replaces manual ledger books and reduces dependency on desktop-centric accounting workflows by providing:
+
+- Mobile-first customer ledger management
+- Instant outstanding balance visibility
+- Faster sales and collection entry
+- Professional PDF invoice generation
+- Offline business operations
+
+The application is designed around real business workflows rather than tutorial or demonstration scenarios.
 
 ---
 
@@ -102,7 +120,7 @@ The application generates high-fidelity, vector-based PDF invoices and ledger su
 
 ---
 
-## 🖼️ Application Screenshots
+## 📱 Application Gallery
 
 ### Launch & Authentication
 | Splash Screen | Login Screen | Settings & Database Utilities |
@@ -132,7 +150,7 @@ The application generates high-fidelity, vector-based PDF invoices and ledger su
 
 ## ⬇️ Download Android APK
 
-The compiled production-grade debug APK is available for installation:
+The latest Android release APK is available for installation.
 
 📥 **[Download Kritika Business Ledger v1.0 APK](./releases/Kritika-Business-Ledger-v1.0.apk)**
 
@@ -149,6 +167,17 @@ The compiled production-grade debug APK is available for installation:
 * **Robust Widget Testing**: Features automated smoke-testing verification scripts (`flutter test`) verifying widget layout trees.
 * **Error Mapping**: Decouples API client exceptions into user-friendly prompts for connectivity issues, authentication timeouts, and database access errors.
 * **Asset Resilience**: Utilizes fallback UI builders that automatically render premium linear gradients and icons if physical logo files are missing.
+
+# 🏆 Engineering Highlights
+
+- Flutter-based cross-platform architecture
+- Firebase Authentication with Google Sign-In
+- Offline-first SQLite persistence layer
+- Professional PDF invoice and ledger generation
+- Backup & Restore functionality
+- Mobile-first UX design
+- Production-ready Android release build
+- Real-world manufacturing and distribution use case
 
 ---
 
