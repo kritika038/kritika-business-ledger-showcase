@@ -7,148 +7,159 @@
 [![Database](https://img.shields.io/badge/Database-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://github.com/kritika038/kritika-business-ledger-showcase)
 [![Auth](https://img.shields.io/badge/Auth-Firebase-FFCA28.svg?style=for-the-badge&logo=firebase)](https://github.com/kritika038/kritika-business-ledger-showcase)
 
-**Kritika Business Ledger** is a premium, mobile-first business bookkeeping and customer outstanding balance tracker designed specifically for manufacturing, distribution, and wholesale trade. It simplifies daily ledger management, payment collections, credit sales tracking, and itemized invoice generation.
-
-This is the **public showcase repository** featuring app documentation, assets, and compiled executables. The private repository `kritika-business-ledger-` houses the source code.
+**Kritika Business Ledger** is a mobile-first business management application designed to track sales, simplify collection recording, monitor outstanding balances, and generate professional PDF invoices directly from mobile devices. It is built as a fast, reliable, and offline-first solution for on-the-field operations.
 
 ---
 
-## 📖 The Project Story
-Kritika Business Ledger was developed to solve a real-world business challenge in a footwear manufacturing and distribution enterprise. 
+## 📋 Project Overview
+Kritika Business Ledger streamlines daily billing, ledgers, and transactions for small-to-medium distributors and agents. By prioritizing mobile user interfaces and local storage efficiency, the application ensures that transactions can be recorded and balanced instantly, even in areas with limited internet connectivity.
 
-The business owner primarily operated through a mobile device and needed a simpler, faster alternative to complex accounting software (like Tally or QuickBooks) for:
-* Customer balance tracking
-* Daily sales recording
-* Payment collection tracking
-* Invoice generation
-* PDF statement export
-* Business reporting
+### Problem Statement
+This project was inspired by real challenges observed in a footwear manufacturing and distribution business where daily sales, customer balances, and payment collections needed to be tracked efficiently from a mobile device. 
 
-Existing corporate accounting software was desktop-centric, expensive, and required formal accounting training. Kritika Business Ledger was designed as a mobile-first solution focused on **speed, simplicity, and offline usability**, allowing agents and proprietors to update billing records instantly on-the-field.
+In this ecosystem, traditional paper logbooks often lead to computational errors, and enterprise desktop accounting packages are too complex and inaccessible for agents during merchant visits.
 
----
-
-## 🚀 Key Features
-
-* **Firebase Authentication & Google Sign-In**: Secure user accounts with verified credentials and seamless sign-in.
-* **Offline-First SQLite Database**: Absolute zero-latency offline performance, ensuring local data access in warehouses or remote merchant routes.
-* **Customer Ledger Management**: Maintained records of credit sales, collections, and transactions mapped dynamically by party.
-* **Daily Sales & Collection Tracking**: Real-time logging of credit transactions and payments.
-* **Outstanding Balance Monitoring**: Highlights receivables on the dashboard, making collections easier.
-* **On-the-Spot Invoice Generation**: Quick billing workflows with automated itemized subtotals.
-* **PDF Export & Native Sharing**: Streamlined vector PDF rendering for statements and invoices, ready to print or share via WhatsApp/Email.
-* **Backup & Restore**: Easily archive the underlying database file (`shoe_ledger_backup.db`) and recover the session on new hardware.
-* **Business Dashboard Analytics**: Colored visual indicators showing net sales, collections, and total outstanding debt.
-* **Search & Filters**: Comprehensive filters to search transactions by keyword, date ranges, or payment modes.
-* **Mobile-First UI**: Modern Material 3 dashboard layout engineered for high readability on small viewports.
+### Why It Was Built
+* **Real-time receivables visibility**: Instant monitoring of outstanding client balances to expedite collections.
+* **On-the-go billing**: Ability to create and share customer invoices during deliveries.
+* **Offline resilience**: Complete operational independence in warehouses and remote markets.
+* **Operational simplicity**: Simplified mobile flows that replace complex bookkeeping ledger journals.
 
 ---
 
-## 🛠️ Tech Stack
-
-* **Frontend**: Flutter, Dart
-* **Backend Services**: Firebase Authentication, Google Sign-in API
-* **Database**: SQLite (Sqflite)
-* **Reporting**: Programmatic PDF Generation (`pdf`, `printing` packages)
-* **Platform**: Android
-* **Version Control**: Git, GitHub
+## 🛠️ Technology Stack
+* **Frontend Framework**: Flutter
+* **Programming Language**: Dart
+* **Authentication Services**: Firebase Authentication, Google Sign-in API
+* **Local Persistence**: SQLite (via `sqflite` driver)
+* **Reporting Output**: PDF Generation (`pdf` & `printing` APIs)
+* **Target Platforms**: Android SDK (Android 5.0+ / API 21+)
+* **Tooling**: Git & GitHub
 
 ---
 
-## 🏗️ Architecture Flow
+## 🚀 Core Features
 
-The transactional architecture flows sequentially as follows:
+* **Customer Ledger Management**: Organize and view transaction statements of all active merchants in one centralized list.
+* **Outstanding Balance Tracking**: Instantly calculates and displays cumulative outstanding receivables by customer.
+* **Sales Recording**: Log credit sales with specific article numbers, colors, rates, and quantities.
+* **Collection Tracking**: Track customer payments via Cash, Bank Transfer, UPI, or Cheque.
+* **Invoice Generation**: Build itemized billing sheets instantly with automated net subtotal calculations.
+* **PDF Export**: Generate professional vector PDF invoices and ledger statements.
+* **Google Sign-In**: Secure user registration and session management.
+* **Offline Database**: Offline relational data storage with foreign key constraints.
+* **Backup & Restore**: Export local databases (`shoe_ledger_backup.db`) and restore them seamlessly.
+* **Business Reporting**: Aggregated sales and collection logs filterable by date parameters.
+
+---
+
+## 🔄 Business Workflow
+
+The flow of operational data in the app follows this sequence:
 
 ```
-User Authentication
-         ↓
-     Dashboard
-         ↓
-Party Ledger Management
-         ↓
-   Sales Tracking
-         ↓
- Payment Collection
-         ↓
- Invoice Generation
-         ↓
-     PDF Export
-         ↓
-  Backup & Restore
+Authentication
+      ↓
+Customer Management
+      ↓
+Sales Recording
+      ↓
+Collections Recording
+      ↓
+Balance Tracking
+      ↓
+Invoice Generation
+      ↓
+PDF Reports
 ```
 
 ---
 
-## 🎯 Recruiter & Technical Portfolio Highlights
+## 🏗️ Architecture Section
 
-For hiring managers, placement committees, and recruiters, this project demonstrates:
+The software architecture is decoupled into distinct layers to ensure separation of concerns and high modularity:
 
-* **Real-World Business Impact**: Built to address cash flow latency in wholesale distribution, delivering a solution that was actively field-tested.
-* **Mobile-First Design**: Optimized for single-hand viewport usage, replacing desktop dependencies with fluid mobile flows.
-* **Offline-First Architecture**: Implemented local SQLite persistence with relational integrity, cascading deletes, and unique indexing, enabling complete offline operational capacity.
-* **Secure Enterprise Authentication**: Integrated Firebase Auth with verification flows, ensuring secure data isolation between distinct client profiles.
-* **Robust PDF Layout Engine**: Used custom vector canvases (`pdf/widgets.dart`) for professional formatted exports, avoiding low-fidelity HTML-to-image wrappers.
-* **Production Build Quality**: Achieved a 100% warning-free compilation output under strict `flutter analyze` linter rules, verified by an active widget smoke-testing suite.
-
----
-
-## 📥 Android APK Download
-
-The compiled production-ready debug APK is available for download:
-
-👉 **[Download Kritika Business Ledger v1.0 APK](./releases/Kritika_Business_Ledger_v1.0.apk)**
-
-*You can also find this asset attached directly to the official [GitHub Release](https://github.com/kritika038/kritika-business-ledger-showcase/releases/tag/v1.0.0).*
+```
+Flutter UI Layer (Material 3 Widgets)
+      ↓
+Business Logic Layer (Controllers & AuthService APIs)
+      ↓
+SQLite Database Layer (Local Sqflite persistence)
+      ↓
+PDF Generation Layer (Vector rendering and OS printing)
+```
 
 ---
 
-## 📄 Sample Report Export
-An example of the PDF statement generated natively by the application can be downloaded here:
+## 📄 PDF Reporting Workflow
+The application generates high-fidelity, vector-based PDF invoices and ledger summaries programmatically using a custom canvas layout:
 
-📂 **[Sample Party Ledger Statement Report (PDF)](./docs/sample_party_ledger_report.pdf)**
+1. **Aggregation**: Gathers metadata (customer profiles, shop settings, transaction dates) and aggregates calculations (sums, net balances).
+2. **Layout Compilation**: Arranges headers, item tables, and footers dynamically inside multi-page document containers.
+3. **Android Channel Dispatch**: Leverages the system printing APIs to output PDF files or share them natively via WhatsApp/Email.
+
+📂 **[Download Sample PDF Report Document](./docs/sample_party_ledger_report.pdf)**
 
 ---
 
-## 🖼️ Screenshots User Flow
+## 🖼️ Application Screenshots
 
-### 1. Launch & Authentication
-| 01. Splash Screen | 02. Login Screen |
-| :---: | :---: |
-| <img src="./screenshots/01_splash_screen.jpeg" width="300" alt="Splash Screen"/> | <img src="./screenshots/02_login_screen.jpeg" width="300" alt="Login Screen"/> |
-| Slate dark gradient with elegant fade-in entrance transition. | Glassmorphic card overlay with secure email & Google authentication. |
+### Launch & Authentication
+| Splash Screen | Login Screen | Settings & Database Utilities |
+| :---: | :---: | :---: |
+| <img src="./screenshots/01_splash_screen.jpeg" width="220" alt="Splash Screen"/> | <img src="./screenshots/02_login_screen.jpeg" width="220" alt="Login Screen"/> | <img src="./screenshots/12_settings_backup_restore.jpeg" width="220" alt="Settings Screen"/> |
+| Slate dark gradient with animated fade-in. | Backdrop filter blur with Google integration. | Reorganized sections for profile, backups, and about. |
 
-### 2. Business Dashboard Analytics
-| 03. Dashboard Overview | 04. Metrics Highlights | 05. Recent Transactions |
+### Dashboard Analytics
+| Dashboard Overview | Metrics Cards | Recent Transactions Feed |
 | :---: | :---: | :---: |
 | <img src="./screenshots/03_dashboard_overview.jpeg" width="220" alt="Dashboard Overview"/> | <img src="./screenshots/04_dashboard_metrics.jpeg" width="220" alt="Dashboard Metrics"/> | <img src="./screenshots/05_recent_transactions.jpeg" width="220" alt="Recent Transactions"/> |
-| General sales, collection, and outstanding summaries. | Colored indicators and responsive LayoutBuilder grids. | Real-time audit logs of recent credits and payments. |
+| At-a-glance receivables summary. | Spaced cards with custom elevations. | List of latest database transactions. |
 
-### 3. Customer Directories & Sales Logs
-| 06. Party Ledger Statement | 11. Add Credit Sale | 13. Customer Balance Tracking |
+### Ledgers & Entry Records
+| Customer Ledger Directory | Credit Sale Entry | Payment Entry |
 | :---: | :---: | :---: |
-| <img src="./screenshots/06_party_ledger.jpeg" width="220" alt="Party Ledger"/> | <img src="./screenshots/11_Add_sale.jpeg" width="220" alt="Add Sale"/> | <img src="./screenshots/13_balance_tracking.jpeg" width="220" alt="Balance Tracking"/> |
-| Consolidated customer ledger records. | Log new credit transactions on the spot. | Tracks net client receivables instantly. |
+| <img src="./screenshots/06_party_ledger.jpeg" width="220" alt="Party Ledger"/> | <img src="./screenshots/11_Add_sale.jpeg" width="220" alt="Add Sale"/> | <img src="./screenshots/10_payment_entry.jpeg" width="220" alt="Payment Entry"/> |
+| Sorted customer credit statements. | Log credit sales with article codes. | Track customer collections. |
 
-### 4. Billing Operations & Collections
-| 07. Invoice Creation | 08. Invoice History Log | 09. Daily Sales Report | 10. Payment Entry |
+### Invoices & Reports
+| Invoice Generation Form | Invoice History Log | Daily Sales Log | Balance Receivables Overview |
 | :---: | :---: | :---: | :---: |
-| <img src="./screenshots/07_invoice_creation.jpeg" width="180" alt="Invoice Creation"/> | <img src="./screenshots/08_invoice_history.jpeg" width="180" alt="Invoice History"/> | <img src="./screenshots/09_daily_sales_report.jpeg" width="180" alt="Daily Sales Report"/> | <img src="./screenshots/10_payment_entry.jpeg" width="180" alt="Payment Entry"/> |
-| Interactive billing workflow helper. | List of generated invoice sheets. | Aggregated reports with PDF print layout options. | Record collections via Cash, Bank, Cheque, or UPI. |
-
-### 5. Utilities & Backups
-| 12. Backup & Restore |
-| :---: |
-| <img src="./screenshots/12_settings_backup_restore.jpeg" width="300" alt="Backup and Restore"/> |
-| Export or restore the local database file (`shoe_ledger_backup.db`) safely. |
+| <img src="./screenshots/07_invoice_creation.jpeg" width="180" alt="Invoice Creation"/> | <img src="./screenshots/08_invoice_history.jpeg" width="180" alt="Invoice History"/> | <img src="./screenshots/09_daily_sales_report.jpeg" width="180" alt="Daily Sales Report"/> | <img src="./screenshots/13_balance_tracking.jpeg" width="180" alt="Balance Tracking"/> |
+| Itemized billing input form. | List of historically built bills. | Filtered sales summaries. | Receivable logs by customer profile. |
 
 ---
 
-## 📝 Release Notes - v1.0.0
+## ⬇️ Download Android APK
 
-### Production Release (Initial Launch)
-* **Authentication Core**: Integrates Firebase Auth and Google Sign-in to deliver secure user sessions.
-* **Relational Database Helper**: SQLite schema version `9` with localized data isolation and cascade rules.
-* **SaaS Dashboard**: Displays outstanding balance highlights, net sales, and client counts.
-* **Vector PDF Compiler**: Exports branded invoices and statements with print/share integrations.
-* **Safety Assertions**: Gradients and vectors fall back gracefully if app asset packages are missing.
-* **Exception Mapping**: Graceful validation prompts for authentication gaps, database operations, and platform limits.
+The compiled production-grade debug APK is available for installation:
+
+📥 **[Download Kritika Business Ledger v1.0 APK](./releases/Kritika-Business-Ledger-v1.0.apk)**
+
+### APK Installation Instructions
+1. Download the `Kritika-Business-Ledger-v1.0.apk` file on your Android device.
+2. Locate the file in your device's File Manager and tap to install.
+3. If prompted, enable "Install from Unknown Sources" in your browser/file manager settings.
+4. Open the application and configure your first business profile.
+
+---
+
+## 💡 Development Highlights
+* **High Linter Compliance**: Verified 100% warning-free under `flutter analyze` configurations.
+* **Robust Widget Testing**: Features automated smoke-testing verification scripts (`flutter test`) verifying widget layout trees.
+* **Error Mapping**: Decouples API client exceptions into user-friendly prompts for connectivity issues, authentication timeouts, and database access errors.
+* **Asset Resilience**: Utilizes fallback UI builders that automatically render premium linear gradients and icons if physical logo files are missing.
+
+---
+
+## 🔮 Future Enhancements
+* **Dark Mode Support**: Add a modern dark theme to improve readability under low-light conditions.
+* **Inventory Module**: Track shoe model sizes, cartons, and stock counts.
+* **Analytics Dashboard**: Add charts showing sales trends and monthly collections.
+* **Cloud Synchronization**: Sync local data with a remote database (Firestore) with full offline caching.
+* **Multi-user Support**: Role-based access controls for business owners and sales agents.
+
+---
+
+## 🔒 Source Code Notice
+The complete source code is maintained in a private repository. This public repository serves as a product showcase, documentation hub, screenshots gallery, and APK distribution page.
