@@ -19,9 +19,9 @@
 Kritika Business Ledger streamlines daily billing, ledger management, collections, and customer account tracking for manufacturing, wholesale, and distribution businesses. By prioritizing mobile user interfaces and local storage efficiency, the application ensures that transactions can be recorded and balanced instantly, even in areas with limited internet connectivity.
 
 ### Problem Statement
-This project was inspired by real challenges observed in a footwear manufacturing and distribution business where daily sales, customer balances, and payment collections needed to be tracked efficiently from a mobile device. 
+This project was inspired by real challenges observed in a footwear manufacturing and distribution business. Managing field operations requires sales agents and business owners to track daily sales, record payment collections, and monitor customer outstanding balances directly while visiting merchant stores. 
 
-In this ecosystem, traditional paper logbooks often lead to computational errors, and enterprise desktop accounting packages are too complex and inaccessible for agents during merchant visits.
+Traditional bookkeeping methods rely on paper logbooks, which are highly prone to calculation errors and offer zero real-time visibility. On the other hand, enterprise desktop accounting packages are overly complex for daily operational workflows and completely inaccessible during field visits. The business needed a mobile-first, simple bookkeeping ledger optimized for rapid on-site entry, balance validation, and instant invoice dispatch.
 
 ### Why It Was Built
 * **Real-time receivables visibility**: Instant monitoring of outstanding client balances to expedite collections.
@@ -29,12 +29,10 @@ In this ecosystem, traditional paper logbooks often lead to computational errors
 * **Offline resilience**: Complete operational independence in warehouses and remote markets.
 * **Operational simplicity**: Simplified mobile flows that replace complex bookkeeping ledger journals.
 
-# 🎯 Real-World Impact
-
+## 🎯 Real-World Impact
 This application was developed after observing day-to-day operational challenges in a footwear manufacturing and distribution business.
 
 The solution replaces manual ledger books and reduces dependency on desktop-centric accounting workflows by providing:
-
 - Mobile-first customer ledger management
 - Instant outstanding balance visibility
 - Faster sales and collection entry
@@ -46,12 +44,12 @@ The application is designed around real business workflows rather than tutorial 
 ---
 
 ## 🛠️ Technology Stack
-* **Frontend Framework**: Flutter
-* **Programming Language**: Dart
-* **Authentication Services**: Firebase Authentication, Google Sign-in API
-* **Local Persistence**: SQLite (via `sqflite` driver)
-* **Reporting Output**: PDF Generation (`pdf` & `printing` APIs)
-* **Target Platforms**: Android SDK (Android 5.0+ / API 21+)
+* **Frontend Framework**: Flutter (Dart)
+* **UI Design System**: Material 3 UI
+* **Authentication Services**: Firebase Core, Firebase Authentication, Google Sign-In API
+* **Local Persistence**: SQLite (via `sqflite` plugin)
+* **Reporting Output**: Flutter PDF & Printing Package APIs
+* **Platform Integrations**: Android SDK, Share Plus, File Selector
 * **Tooling**: Git & GitHub
 
 ---
@@ -95,7 +93,7 @@ PDF Reports
 
 ## 🏗️ Architecture Section
 
-The software architecture is decoupled into distinct layers to ensure separation of concerns and high modularity:
+The software architecture is decoupled into distinct layers to ensure separation of concerns and high performance:
 
 ```
 Flutter UI Layer (Material 3 Widgets)
@@ -168,16 +166,28 @@ The latest Android release APK is available for installation.
 * **Error Mapping**: Decouples API client exceptions into user-friendly prompts for connectivity issues, authentication timeouts, and database access errors.
 * **Asset Resilience**: Utilizes fallback UI builders that automatically render premium linear gradients and icons if physical logo files are missing.
 
-# 🏆 Engineering Highlights
+---
 
-- Flutter-based cross-platform architecture
-- Firebase Authentication with Google Sign-In
-- Offline-first SQLite persistence layer
-- Professional PDF invoice and ledger generation
-- Backup & Restore functionality
-- Mobile-first UX design
-- Production-ready Android release build
-- Real-world manufacturing and distribution use case
+## 🏆 Engineering Highlights
+- Flutter-based cross-platform architecture.
+- Firebase Authentication with Google Sign-In support.
+- Offline-first SQLite persistence layer with relational integrity.
+- Professional PDF invoice and ledger generation.
+- Backup & Restore functionality for local database recovery.
+- Mobile-first Material 3 UX design.
+- Production-ready Android release build setups.
+- Real-world manufacturing and distribution business use case mapping.
+
+---
+
+## 📈 Key Achievements
+- Designed and developed a complete Flutter business application from concept to deployment.
+- Implemented offline-first architecture using SQLite for reliable local data storage.
+- Integrated Firebase Authentication and Google Sign-In for secure access.
+- Built professional PDF invoice and ledger generation workflows.
+- Developed backup and restore functionality for business continuity.
+- Successfully generated production Android release builds (APK & AAB).
+- Applied real-world business workflow modeling based on manufacturing and distribution operations.
 
 ---
 
@@ -187,6 +197,19 @@ The latest Android release APK is available for installation.
 * **Analytics Dashboard**: Add charts showing sales trends and monthly collections.
 * **Cloud Synchronization**: Sync local data with a remote database (Firestore) with full offline caching.
 * **Multi-user Support**: Role-based access controls for business owners and sales agents.
+
+---
+
+## 📊 Project Statistics
+* **Platform**: Android
+* **Framework**: Flutter
+* **Language**: Dart
+* **Authentication**: Firebase Authentication
+* **Database**: SQLite
+* **Reporting**: PDF Generation
+* **Architecture**: Layered Mobile Application Architecture
+* **Offline Support**: Yes
+* **Release Build**: APK + AAB
 
 ---
 
