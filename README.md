@@ -1,15 +1,3 @@
-# Business Ledger
-
-[![Build Status](https://img.shields.io/badge/Build-Success-success.svg?style=for-the-badge&logo=android)](https://github.com/kritika038/kritika-business-ledger-showcase)
-[![Platform](https://img.shields.io/badge/Platform-Android-007ACC.svg?style=for-the-badge&logo=android)](https://github.com/kritika038/kritika-business-ledger-showcase)
-[![Framework](https://img.shields.io/badge/Framework-Flutter-02569B.svg?style=for-the-badge&logo=flutter)](https://github.com/kritika038/kritika-business-ledger-showcase)
-[![Language](https://img.shields.io/badge/Language-Dart-0175C2.svg?style=for-the-badge&logo=dart)](https://github.com/kritika038/kritika-business-ledger-showcase)
-[![Database](https://img.shields.io/badge/Database-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://github.com/kritika038/kritika-business-ledger-showcase)
-[![Auth](https://img.shields.io/badge/Auth-Firebase-FFCA28.svg?style=for-the-badge&logo=firebase)](https://github.com/kritika038/kritika-business-ledger-showcase)
-<br/>
-[![Stars](https://img.shields.io/github/stars/kritika038/kritika-business-ledger-showcase?style=for-the-badge)](https://github.com/kritika038/kritika-business-ledger-showcase/stargazers)
-[![Forks](https://img.shields.io/github/forks/kritika038/kritika-business-ledger-showcase?style=for-the-badge)](https://github.com/kritika038/kritika-business-ledger-showcase/network/members)
-[![Last Commit](https://img.shields.io/github/last-commit/kritika038/kritika-business-ledger-showcase?style=for-the-badge)](https://github.com/kritika038/kritika-business-ledger-showcase/commits/main)
 
 # Business Ledger
 
