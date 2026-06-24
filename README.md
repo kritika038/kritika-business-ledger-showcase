@@ -1,4 +1,3 @@
-
 # Business Ledger
 
 > **Smart Mobile Ledger Management for Small Businesses & Field Sales Teams**
@@ -11,10 +10,12 @@ A comprehensive business ledger, inventory, billing, and customer account manage
 ![Dart](https://img.shields.io/badge/Dart-3.x-blue?logo=dart)
 ![SQLite](https://img.shields.io/badge/SQLite-Latest-green?logo=sqlite)
 ![Firebase](https://img.shields.io/badge/Firebase-Latest-orange?logo=firebase)
-![License](https://img.shields.io/badge/License-MIT-green)
+![License](https://img.shields.io/badge/License-Private-red)
 ![Version](https://img.shields.io/badge/Version-1.0.4-blue)
 
 **A production-ready business management app built from real-world requirements**
+
+📌 **Private Portfolio Project** — Code available upon request
 
 </div>
 
@@ -44,7 +45,7 @@ A comprehensive business ledger, inventory, billing, and customer account manage
 | | |
 |---|---|
 | **📹 Watch Demo** | [Full Application Walkthrough](https://www.youtube.com/shorts/hJ1GCkaRr_0) |
-| **📱 Get APK** | [Download Latest v1.0.4](https://github.com/kritika038/business-ledger/releases/tag/v1.0.4) |
+| **📱 Get APK** | Available upon request (Private Project) |
 
 ---
 
@@ -180,7 +181,9 @@ Development Tools:     Android Studio, VS Code, Git
 
 ### Installation
 
-1. **Clone the repository**
+> **Note:** This is a private repository. Code access available upon request.
+
+1. **Clone the repository** (with appropriate access)
    ```bash
    git clone https://github.com/kritika038/business-ledger.git
    cd business-ledger
@@ -218,12 +221,12 @@ lib/
 
 | Feature | Screenshot |
 |---------|-----------|
-| Dashboard Overview | ![Dashboard](screenshots/01_dashboard_overview.jpeg) |
-| Pending Payments | ![Pending Payments](screenshots/02_pending_payments_dashboard.jpeg) |
-| Transaction History | ![Transactions](screenshots/03_transaction_history.jpeg) |
-| Invoice Management | ![Invoices](screenshots/04_invoice_management.jpeg) |
-| Inventory Tracking | ![Inventory](screenshots/05_inventory_management.jpeg) |
-| Business Reports | ![Reports](screenshots/06_business_reports.jpeg) |
+| Dashboard Overview | ![Dashboard](screenshots/01_dashboard-overview.jpeg) |
+| Pending Payments | ![Pending Payments](screenshots/02_pending-payments-dashboard.jpeg) |
+| Transaction History | ![Transactions](screenshots/03_transaction-history.jpeg) |
+| Invoice Management | ![Invoices](screenshots/04_invoice-management.jpeg) |
+| Inventory Tracking | ![Inventory](screenshots/05_inventory-management.jpeg) |
+| Business Reports | ![Reports](screenshots/06_business-reports.jpeg) |
 
 ---
 
@@ -266,12 +269,14 @@ Perfect for:
 
 ---
 
-## 🤝 Contributing
+## 📬 Interested in This Project?
 
-Contributions are welcome! Feel free to:
-- Report issues
-- Suggest features
-- Submit pull requests
+This is a **private portfolio project** showcasing real-world Flutter development skills.
+
+**For collaboration, inquiries, or code access:**
+- 📧 Contact via GitHub profile
+- 💼 Open to discussing the project in interviews
+- 🔗 Source code available upon request for serious inquiries
 
 ---
 
@@ -284,9 +289,10 @@ This project is available on GitHub. Check the repository for license details.
 ## 📦 Latest Release
 
 **Version:** 1.0.4  
-**Build:** 5
+**Build:** 5  
+**Status:** Private Portfolio Project
 
-📥 **[Download APK](https://github.com/kritika038/business-ledger/releases/tag/v1.0.4)**
+📥 APK & Release builds available upon request
 
 ---
 
