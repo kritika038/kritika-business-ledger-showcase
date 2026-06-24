@@ -349,6 +349,9 @@ B.Tech Computer Science (Artificial Intelligence)
 - Business Logic Implementation
 - Offline-First Architecture
 - Real-world Application Development
+- Firestore Database Integration
+- Backup & Restore Systems
+- WhatsApp Sharing Integration
 
 ---
 
